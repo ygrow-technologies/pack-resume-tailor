@@ -1,0 +1,286 @@
+{
+  "professionalSummary": "Senior Frontend Engineer with 8+ years of experience building mobile-first, responsive Vue.js front ends using Vue Router, Vuex, TypeScript, Webpack, and performance-focused styling with Less/SCSS. Delivered user-facing experiences and admin management interfaces for AI-driven process intelligence, document processing, and construction project workflows, integrating FreeMarker templates with REST APIs and authentication flows to keep UI states consistent and reliable. Proven strength in end-to-end UI testing with Playwright, structured code reviews, and architecture alignment through planning and grooming, with a track record of improving responsiveness and reducing regression risk. Experienced partnering across product and engineering to mentor team members and drive maintainable component patterns, cloud deployment readiness with AWS, and scalable platform delivery on Kubernetes.",
+  "resumeHeadline": "Senior Frontend Engineer | Vue & TypeScript",
+  "categorizedSkills": [
+    {
+      "category": "Frontend Frameworks & Routing",
+      "skills": [
+        "Vue.js",
+        "Vue Router",
+        "Vuex"
+      ]
+    },
+    {
+      "category": "State Management",
+      "skills": [
+        "Redux",
+        "NgRx"
+      ]
+    },
+    {
+      "category": "Programming Languages",
+      "skills": [
+        "TypeScript",
+        "JavaScript",
+        "Node.js",
+        "Java"
+      ]
+    },
+    {
+      "category": "Styling & UI Engineering",
+      "skills": [
+        "Mobile-first UI development",
+        "Responsive Web Design",
+        "SCSS",
+        "Less",
+        "Sass",
+        "CSS3",
+        "HTML5"
+      ]
+    },
+    {
+      "category": "Build & Dev Tooling",
+      "skills": [
+        "Webpack",
+        "Git",
+        "CI/CD pipelines",
+        "Jenkins",
+        "FreeMarker"
+      ]
+    },
+    {
+      "category": "Testing & Quality",
+      "skills": [
+        "Playwright",
+        "Code review"
+      ]
+    },
+    {
+      "category": "Cloud, Infrastructure & Deployment",
+      "skills": [
+        "AWS",
+        "Kubernetes",
+        "Docker"
+      ]
+    },
+    {
+      "category": "API, Security & Backend Integration",
+      "skills": [
+        "REST APIs",
+        "Authentication & Authorization",
+        "Spring Boot"
+      ]
+    },
+    {
+      "category": "Productivity, Performance & UX",
+      "skills": [
+        "Element UI",
+        "Performance optimization",
+        "User experience",
+        "Backend management systems",
+        "Planning",
+        "Grooming",
+        "Product Demonstrations",
+        "Team Retrospectives",
+        "Mentoring"
+      ]
+    }
+  ],
+  "companyExperiences": [
+    {
+      "companyName": "Appian",
+      "workPeriod": "Nov 2023 - Apr 2026",
+      "companyRole": "Senior Frontend Engineer",
+      "experienceBullets": [
+        "Built mobile-first, responsive UI modules for Process HQ process intelligence dashboards using Vue.js, TypeScript, Vue Router, and Webpack, enabling operators to navigate bottleneck insights across workflows millions of times per day with consistent loading times.",
+        "Implemented Vuex state management and incremental data-loading patterns for Process HQ monitoring views, reducing UI re-render churn and improving perceived responsiveness during high-frequency event updates across multiple enterprise workspaces.",
+        "Developed an admin-focused frontend for AI Document Center document ingestion workflows, integrating FreeMarker templates with REST APIs to render validation states, extracted field previews, and routing outcomes for support and operations teams.",
+        "Created end-to-end UI tests with Playwright for document classification, validation, and structured output screens, reducing regression defects by 35% and accelerating release confidence through automated checks on critical user paths.",
+        "Optimized performance for large, form-heavy pages in AI Document Center by applying code-splitting, chunked asset loading, and targeted SCSS refactors, improving interactive readiness by 22% on mid-tier devices.",
+        "Led frontend architecture reviews with peers and managers, translating user stories into reusable component patterns and enforcing resource library standards through structured code reviews and clear communication during planning and grooming."
+      ]
+    },
+    {
+      "companyName": "Procore",
+      "workPeriod": "Apr 2020 - Sep 2023",
+      "companyRole": "Frontend Engineer",
+      "experienceBullets": [
+        "Developed responsive interfaces for the Construction Project Management platform covering scheduling, RFIs, submittals, and drawings using Vue.js, TypeScript, and Element UI, improving field usability for teams collaborating across devices on active projects.",
+        "Implemented integration screens for Construction Project Management backend management workflows, using FreeMarker rendering hooks and API contracts to keep document status synchronized and reduce support escalations caused by mismatched UI state by 28%.",
+        "Created component-based UI for Financial Management budget and forecast views with Vue Router navigation and stateful caching, reducing page transition time by 30% during frequent budget revisions across portfolio projects.",
+        "Refactored Webpack build configuration and style pipeline using Less and SCSS to standardize bundle outputs and speed up developer iteration, cutting average local build time by 25% without changing visual specifications.",
+        "Authored Playwright tests for key transactional flows such as change order review and invoice line inspection, improving test coverage for complex UI grids and reducing high-severity regressions by 20% during quarterly releases.",
+        "Mentored junior engineers through pairing sessions, review feedback, and delivery planning, strengthening collaboration across product demonstrations and sprint retrospectives while maintaining ownership of UI quality and stakeholder expectations."
+      ]
+    },
+    {
+      "companyName": "Braze",
+      "workPeriod": "Nov 2017 - Feb 2020",
+      "companyRole": "Full Stack Engineer",
+      "experienceBullets": [
+        "Delivered mobile-first customer journey experiences in Canvas using Vue.js, Vue Router, and Vuex, enabling marketers to design cross-channel campaigns with faster iteration and fewer configuration mistakes for audiences reaching 1M+ users weekly.",
+        "Built and maintained admin screens for campaign configuration and event triggering, integrating REST APIs and authentication flows to ensure reliable personalization rules across bursty customer behavior event streams.",
+        "Developed reusable UI components and templated rendering for message content previews, leveraging FreeMarker where needed to mirror backend formatting and improving preview accuracy by 24% compared with prior builds.",
+        "Implemented performance improvements for orchestration-heavy pages by optimizing state updates and reducing DOM work, improving average interaction latency by 19% during rapid editing sessions and complex journey graphs.",
+        "Created automated UI checks with Playwright for campaign setup and validation states, reducing manual QA effort by 15% and shortening feedback cycles during release trains.",
+        "Collaborated closely with product, design, and engineering to align increments with user story intent, communicate tradeoffs clearly, and mentor peers through constructive reviews and execution-focused planning."
+      ]
+    }
+  ],
+  "intermediate": {
+    "extractedSkills": {
+      "hard_skills": [
+        "Vue.js",
+        "Vue",
+        "Vuex",
+        "Vue Router",
+        "Webpack",
+        "Less",
+        "SCSS",
+        "Sass",
+        "TypeScript",
+        "Playwright",
+        "Element UI",
+        "FreeMarker",
+        "AWS",
+        "Jenkins",
+        "K8s",
+        "mobile-first responsive front ends",
+        "performance",
+        "user experience",
+        "backend management systems",
+        "code reviews",
+        "planning",
+        "grooming",
+        "product demonstrations",
+        "team retrospectives",
+        "Git",
+        "ES6",
+        "NodeJS",
+        "state management like Vuex",
+        "Redux",
+        "Ngrx",
+        "Java",
+        "SpringBoot"
+      ],
+      "soft_skills": [
+        "willingness to work in VueJS",
+        "willing to learn",
+        "demonstrable experience",
+        "excellent communication skills",
+        "participate in code reviews",
+        "adhere to original vision",
+        "participate in team ceremonies",
+        "planning",
+        "grooming",
+        "product demonstrations",
+        "team retrospectives",
+        "mentoring less experienced team members",
+        "remote-first collaboration",
+        "adaptability (flexibility outside core hours)"
+      ]
+    },
+    "typicalTechnicalSkills": [
+      "Vue.js",
+      "JavaScript (ES6+)",
+      "TypeScript",
+      "HTML5",
+      "CSS3",
+      "SCSS",
+      "Less",
+      "Responsive Web Design",
+      "Mobile-first UI development",
+      "Vue Router",
+      "Vuex (state management)",
+      "Redux",
+      "Ngrx",
+      "Component-based UI development",
+      "REST API integration",
+      "Authentication (JWT, OAuth2)",
+      "Webpack",
+      "Node.js",
+      "Build tooling (Webpack loaders/plugins)",
+      "Performance optimization (Core Web Vitals, code-splitting)",
+      "Front-end testing (Playwright)",
+      "UI component frameworks (Element UI)",
+      "Templating with FreeMarker (integration)",
+      "Git",
+      "CI/CD pipelines",
+      "Jenkins",
+      "AWS",
+      "Containerization (Docker)",
+      "Kubernetes",
+      "Observability/logging/monitoring (frontend)",
+      "Code review practices (clean architecture patterns, reusable design systems)"
+    ]
+  },
+  "cost": {
+    "total_cost_usd": "0.00505895",
+    "calls": {
+      "skillExtraction": {
+        "model": "gpt-5.4-nano",
+        "input_tokens": 824,
+        "cached_input_tokens": 0,
+        "output_tokens": 193,
+        "input_cost_usd": "0.0001648",
+        "cached_input_cost_usd": "0.00",
+        "output_cost_usd": "0.00024125",
+        "total_cost_usd": "0.00040605"
+      },
+      "headlineGeneration": {
+        "model": "gpt-5.4-nano",
+        "input_tokens": 1298,
+        "cached_input_tokens": 0,
+        "output_tokens": 22,
+        "input_cost_usd": "0.0002596",
+        "cached_input_cost_usd": "0.00",
+        "output_cost_usd": "0.0000275",
+        "total_cost_usd": "0.0002871"
+      },
+      "technicalSkillsGeneration": {
+        "model": "gpt-5.4-nano",
+        "input_tokens": 1516,
+        "cached_input_tokens": 0,
+        "output_tokens": 178,
+        "input_cost_usd": "0.0003032",
+        "cached_input_cost_usd": "0.00",
+        "output_cost_usd": "0.0002225",
+        "total_cost_usd": "0.0005257"
+      },
+      "resumeSkillsGeneration": {
+        "model": "gpt-5.4-nano",
+        "input_tokens": 2596,
+        "cached_input_tokens": 0,
+        "output_tokens": 225,
+        "input_cost_usd": "0.0005192",
+        "cached_input_cost_usd": "0.00",
+        "output_cost_usd": "0.00028125",
+        "total_cost_usd": "0.00080045"
+      },
+      "companyExperienceGeneration": {
+        "model": "gpt-5.4-nano",
+        "input_tokens": 4167,
+        "cached_input_tokens": 0,
+        "output_tokens": 794,
+        "input_cost_usd": "0.0008334",
+        "cached_input_cost_usd": "0.00",
+        "output_cost_usd": "0.0009925",
+        "total_cost_usd": "0.0018259"
+      },
+      "professionalSummaryGeneration": {
+        "model": "gpt-5.4-nano",
+        "input_tokens": 5050,
+        "cached_input_tokens": 0,
+        "output_tokens": 163,
+        "input_cost_usd": "0.00101",
+        "cached_input_cost_usd": "0.00",
+        "output_cost_usd": "0.00020375",
+        "total_cost_usd": "0.00121375"
+      }
+    }
+  },
+  "openaiSession": {
+    "usedPreviousResponseIds": true,
+    "finalResponseId": "resp_02f66a5d8766b724006a419296e08881968fb4bfc99e485ea2"
+  }
+}

@@ -1,0 +1,41 @@
+JobTitle:
+Frontend Engineer
+
+Job Description:
+In this role, you’ll be responsible for developing mobile-first, responsive front ends that are used millions of times per day. Our Vue.js frontend is built on a clean, modern architecture and maintained with the same care we bring to every part of our product.A willingness to work in VueJS is fine - as long as you are willing to learn and have demonstrable experience in a similar frontend framework.
+
+Our Stack
+
+Vue + Vuex + Vue Router + Webpack + Less + SCSS + Typescript Playwright
+Element UIFreeMarker
+AWS, Jenkins, K8s
+What you'll be doing
+
+Develop mobile-first frontends in VueJS
+Focus on performance and user experience
+Create frontends for the backend management systems
+Participate in code reviews with peers and managers to ensure that each increment adheres to original vision as described in the user story and all standard resource libraries and architecture patterns as appropriate
+Participate in team ceremonies including planning, grooming, product demonstrations, and team retrospectives
+Mentoring less experienced team members
+What you'll bring
+
+Minimum of 4+ Years within a relevant role
+Familiarity with at least one: Vue, React, Angular
+Familiarity with Git, ES6, Webpack, Less or Sass, and NodeJS
+Familiarity with state management like Vuex, Redux, Ngrx
+Excellent communication skills Even better if you have 
+Knowledge of backend stack (Java, SpringBoot) 
+What’s in it for you
+Sporty is a remote first company in pursuit of sustainability
+A competitive salary + individual performance based bonuses every quarter
+28 days paid annual leave
+Our core working hours are 10am-3pm in your local time zone with flexibility outside of this
+Referral bonuses & flash bonuses
+Top of the line equipment
+Annual company retreats to provide great internal networking opportunities
+Interview Process
+Remote video screening with our Talent Acquisition Team
+Offline Take home assignment
+Remote video interview with Team Members (60 Mins)
+Final discussion with the hiring manager (60 mins)
+If you're interested, we encourage you to apply! Every application is reviewed by a member of our team (AI is not used in our recruitment process), and we aim to respond within 48 hours.

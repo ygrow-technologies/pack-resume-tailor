@@ -1,0 +1,58 @@
+Task: Generate 1 resume headline based on the given job description.
+
+Input:
+
+* Job Description: provided by the application.
+
+Rules:
+
+* Output valid JSON only.
+* Use the exact JSON key `resumeHeadline`.
+* Use camelCase keys exactly as shown in the output format.
+* Do not include markdown, explanation, comments, or text outside the JSON.
+* Generate exactly 1 headline.
+* Keep the headline short, professional, ATS-friendly, and aligned with the job description's seniority.
+* Prefer the simplest professional headline that is still aligned with the job description.
+* Use one of these headline styles:
+  * `Senior Full Stack Engineer`
+  * `Senior Full Stack Engineer | Python & React`
+  * `Senior Full Stack Engineer | Python, React & Cloud APIs`
+* Do not use parentheses in the headline.
+* Do not combine parentheses and a pipe in the same headline.
+* Use at most one pipe character.
+* If using a pipe, keep the text after the pipe to 1 to 3 compact specialization terms.
+* Do not use long subtitles such as `React, FastAPI & Cloud Deployment` when a shorter phrase such as `Python, React & Cloud APIs` or `Python & React` is enough.
+* Choose a realistic senior role name. Use one of these role families unless the job description clearly requires a stack-based title:
+  * Senior Software Engineer
+  * Senior Full Stack Engineer
+  * Senior Backend Engineer
+  * Senior Frontend Engineer
+  * Senior Mobile Developer
+  * Senior Data Engineer
+  * Senior AI Engineer
+  * Senior ML Engineer
+  * Senior Platform Engineer
+  * Senior DevOps Engineer
+  * Senior Integration Engineer
+  * Senior AI Full Stack Engineer
+  * Senior AI Software Engineer
+* If the job description clearly specifies a backend, frontend, or language-specific stack, use a realistic stack-based title such as `Senior Python Engineer`, `Senior React Engineer`, `Senior Java Engineer`, or `Senior .NET Engineer`.
+* If the job description clearly specifies full stack work, keep `Senior Full Stack Engineer`.
+* If the job description emphasizes AI, ML, data, DevOps, platform, integration, security, or cloud work, prefer the closest role-based title unless a stack-based title is clearly stronger.
+* If the stack is unclear, choose the closest role family based on responsibilities.
+* Avoid buzzwords, long subtitles, vague claims, and company names from the job description.
+
+Validation before final output:
+
+* Confirm there is exactly 1 headline.
+* Confirm the JSON key is exactly `resumeHeadline`.
+* Confirm the headline is short and aligned with the job description.
+* Confirm the headline has no parentheses.
+* Confirm the headline uses at most one pipe.
+* Confirm any specialization after the pipe is short and professional.
+* Confirm no extra text appears outside the JSON.
+
+Output format:
+{
+  "resumeHeadline": "Senior Backend Engineer | Python & Cloud API Specialist"
+}

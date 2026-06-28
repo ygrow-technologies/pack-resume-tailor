@@ -1,0 +1,97 @@
+{
+  "categorizedSkills": [
+    {
+      "category": "Frontend Frameworks & Routing",
+      "skills": [
+        "Vue.js",
+        "Vue Router",
+        "Vuex"
+      ]
+    },
+    {
+      "category": "State Management",
+      "skills": [
+        "Redux",
+        "NgRx"
+      ]
+    },
+    {
+      "category": "Programming Languages",
+      "skills": [
+        "TypeScript",
+        "JavaScript",
+        "Node.js",
+        "Java"
+      ]
+    },
+    {
+      "category": "Styling & UI Engineering",
+      "skills": [
+        "Mobile-first UI development",
+        "Responsive Web Design",
+        "SCSS",
+        "Less",
+        "Sass",
+        "CSS3",
+        "HTML5"
+      ]
+    },
+    {
+      "category": "Build & Dev Tooling",
+      "skills": [
+        "Webpack",
+        "Git",
+        "CI/CD pipelines",
+        "Jenkins",
+        "FreeMarker"
+      ]
+    },
+    {
+      "category": "Testing & Quality",
+      "skills": [
+        "Playwright",
+        "Code review"
+      ]
+    },
+    {
+      "category": "Cloud, Infrastructure & Deployment",
+      "skills": [
+        "AWS",
+        "Kubernetes",
+        "Docker"
+      ]
+    },
+    {
+      "category": "API, Security & Backend Integration",
+      "skills": [
+        "REST APIs",
+        "Authentication & Authorization",
+        "Spring Boot"
+      ]
+    },
+    {
+      "category": "Productivity, Performance & UX",
+      "skills": [
+        "Element UI",
+        "Performance optimization",
+        "User experience",
+        "Backend management systems",
+        "Planning",
+        "Grooming",
+        "Product Demonstrations",
+        "Team Retrospectives",
+        "Mentoring"
+      ]
+    }
+  ],
+  "cost": {
+    "model": "gpt-5.4-nano",
+    "input_tokens": 2596,
+    "cached_input_tokens": 0,
+    "output_tokens": 225,
+    "input_cost_usd": "0.0005192",
+    "cached_input_cost_usd": "0.00",
+    "output_cost_usd": "0.00028125",
+    "total_cost_usd": "0.00080045"
+  }
+}

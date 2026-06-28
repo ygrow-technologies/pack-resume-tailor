@@ -1,0 +1,58 @@
+Task: Generate an ATS-friendly professional summary for a resume.
+
+Inputs:
+
+* Generated resume headline: provided by the application.
+* Generated technical skills: provided by the application.
+* Generated company experience: provided by the application.
+* Years of experience: provided by the application.
+
+Rules:
+
+* Output valid JSON only.
+* Use the exact JSON key `professionalSummary`.
+* Use camelCase keys exactly as shown in the output format.
+* Do not include markdown, explanation, comments, or text outside the JSON.
+* Generate exactly one professional summary paragraph.
+* Write 3 to 4 sentences.
+* Keep the summary around 120 to 150 words when possible.
+* Do not use first-person language.
+* Do not use `I`, `my`, `me`, `we`, or `our`.
+* Begin with only the target role or closest realistic role match from the generated headline.
+* If the generated headline contains a pipe, colon, dash, subtitle, or specialization phrase, use only the role/title before that separator to start the summary.
+* For example, if the headline is `Senior Full Stack Engineer | Python, React & Cloud API Development`, the summary must start with `Senior Full Stack Engineer with ...`, not the full headline.
+* Mention headline technologies such as Python, React, cloud, APIs, AI, or data naturally after the opening phrase instead of copying the whole headline.
+* Include the word `engineer`.
+* Use the provided years of experience exactly.
+* Include `X+ years of experience` using the provided years value.
+* Mention the strongest job-aligned technical skills early.
+* Mention relevant industries, product areas, platforms, or business domains from the generated company experience.
+* Include at least one clear business, product, operational, or engineering impact.
+* Do not use numeric metrics except years of experience.
+* Use important job-aligned keywords naturally without keyword stuffing.
+* Include relevant frontend, backend, framework, database, cloud, infrastructure, platform, testing, delivery, collaboration, leadership, ownership, mentoring, communication, and execution signals when supported by the inputs.
+* If the target role is AI/ML, emphasize AI/ML, LLM integration, RAG, evaluation, experimentation, data pipelines, and production AI reliability.
+* If the target role is data engineering, emphasize data modeling, pipelines, warehouses, SQL optimization, orchestration, data quality, and analytics enablement.
+* If the target role is cloud, platform, DevOps, or integration, emphasize CI/CD, infrastructure, observability, automation, reliability, containers, cloud services, and incident response.
+* If the target role is full stack, balance frontend, backend, database, cloud, testing, product delivery, and user-facing systems.
+* If the target role is backend, emphasize APIs, distributed systems, data modeling, queues, cloud services, performance, reliability, and system design.
+* Avoid generic phrases such as `results-driven professional`.
+* Do not invent employers, degrees, certifications, locations, dates, or unsupported metrics.
+* Keep the summary realistic, senior-level, ATS-friendly, and recruiter-readable.
+
+Validation before final output:
+
+* Confirm the JSON key is exactly `professionalSummary`.
+* Confirm the summary has 3 to 4 sentences.
+* Confirm the summary starts with a clean role phrase, not the full decorated headline.
+* Confirm the opening phrase does not include `|`, colon-separated subtitles, or long specialization text.
+* Confirm no first-person language is used.
+* Confirm years of experience are included.
+* Confirm no numeric metrics are used except years of experience.
+* Confirm the summary reads naturally and does not sound keyword-stuffed.
+* Confirm no extra text appears outside the JSON.
+
+Output format:
+{
+  "professionalSummary": "Senior backend engineer with 13+ years of experience building production-grade Python, TypeScript, AWS, and API-driven systems across SaaS, analytics, workflow automation, and enterprise platforms. Strong background in distributed services, REST APIs, event-driven architecture, PostgreSQL, Docker, Kubernetes, CI/CD, automated testing, observability, and secure integrations for reliable production environments. Experienced in owning backend features from architecture through deployment, improving reliability, maintainability, and operational visibility across complex product workflows. Known for cross-functional collaboration, code reviews, mentoring, stakeholder communication, product thinking, and practical execution in fast-moving engineering teams."
+}

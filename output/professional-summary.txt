@@ -1,0 +1,13 @@
+{
+  "professionalSummary": "Senior Frontend Engineer with 8+ years of experience building mobile-first, responsive Vue.js front ends using Vue Router, Vuex, TypeScript, Webpack, and performance-focused styling with Less/SCSS. Delivered user-facing experiences and admin management interfaces for AI-driven process intelligence, document processing, and construction project workflows, integrating FreeMarker templates with REST APIs and authentication flows to keep UI states consistent and reliable. Proven strength in end-to-end UI testing with Playwright, structured code reviews, and architecture alignment through planning and grooming, with a track record of improving responsiveness and reducing regression risk. Experienced partnering across product and engineering to mentor team members and drive maintainable component patterns, cloud deployment readiness with AWS, and scalable platform delivery on Kubernetes.",
+  "cost": {
+    "model": "gpt-5.4-nano",
+    "input_tokens": 5050,
+    "cached_input_tokens": 0,
+    "output_tokens": 163,
+    "input_cost_usd": "0.00101",
+    "cached_input_cost_usd": "0.00",
+    "output_cost_usd": "0.00020375",
+    "total_cost_usd": "0.00121375"
+  }
+}

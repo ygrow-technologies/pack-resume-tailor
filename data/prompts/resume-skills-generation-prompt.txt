@@ -1,0 +1,86 @@
+Task: Generate final categorized skills for a resume.
+
+Inputs:
+
+* Extracted skills from the job description: provided by the application.
+* Typical required technical skills for the generated resume headline: provided by the application.
+
+Rules:
+
+* Output valid JSON only.
+* Use the exact JSON key `categorizedSkills`.
+* Use camelCase keys exactly as shown in the output format.
+* Do not include markdown, explanation, comments, or text outside the JSON.
+* Combine the extracted job-description skills and generated technical skills into a polished resume skills section.
+* Mandatory coverage rule: every distinct technical concept from `hard_skills` and `technicalSkills` must be represented in the final `categorizedSkills` output.
+* Represent each distinct concept once using the cleanest, most common, recruiter-friendly skill name.
+* Do not preserve every wording variant from the inputs.
+* Do not include duplicate, case-variant, plural-variant, version-variant, or phrase-variant copies of the same skill.
+* Normalize skills before categorizing them.
+* Prefer common canonical skill names over verbose phrases.
+* Prefer versionless skill names for the final skills section unless the version is essential to the role.
+* Deduplicate overlapping skills and remove near-duplicates while preserving distinct concepts.
+* Prefer specific skills over broad generic labels, but do not keep both when one clearly contains the other.
+* Prioritize job-description keywords first, then add closely related role-relevant skills for realistic ATS coverage.
+* Include all meaningful technical signals, domain signals, engineering practices, tools, and platforms from the inputs after normalization.
+* Include soft skills when relevant, but never drop technical skills to make room for soft skills.
+* Keep skills concise, recruiter-readable, and ATS-friendly.
+* Use as many clear resume-friendly categories as needed to include all input technical skills cleanly.
+* Prefer 6 to 9 categories when the inputs contain many skills.
+* Each category should contain useful, focused skills instead of filler.
+* It is acceptable for categories to contain more than 10 skills when needed for full input coverage.
+* Place skills in the correct category.
+* Programming language categories should only include real programming or scripting languages.
+* Framework and library categories should include application frameworks, backend frameworks, frontend frameworks, AI libraries, SDKs, and similar items.
+* Database categories may include databases, warehouses, search engines, caches, and data modeling concepts.
+* Cloud and platform categories may include cloud providers, container platforms, infrastructure platforms, deployment platforms, and hosting platforms.
+* Tools categories may include developer tools, monitoring tools, CI/CD tools, orchestration tools, API tools, and productivity tools.
+* Methodology or engineering practice categories may include architecture styles, testing approaches, delivery practices, reliability, observability, and development methods.
+* Soft skill categories may include leadership, communication, ownership, mentoring, collaboration, prioritization, product thinking, and stakeholder management.
+* Do not place Node.js under programming languages.
+* Do not place GraphQL under programming languages.
+* Do not place JSON or YAML under programming languages unless they are explicitly important configuration skills.
+* Do not include unrelated technologies, bloated filler terms, cultural phrases, sentence fragments, company descriptors, or generic responsibilities as skills.
+* Exclude non-skill phrases such as `deploying and maintaining applications`, `Solve complex and interesting problems`, `maximize productivity`, `focus on creative problem-solving`, `AI-focused engineering culture`, `Experience at a high-growth B2B SaaS startup`, and similar prose.
+
+Normalization examples:
+
+* `Python` and `Python 3.x` -> `Python`
+* `Vector databases` and `vector databases` -> `Vector Databases`
+* `RAG pattern` and `RAG` -> `RAG`
+* `LLM APIs` and `LLM API integration` -> `LLM API Integration`
+* `OpenAI` and `OpenAI API` -> `OpenAI API`
+* `Anthropic` and `Anthropic API` -> `Anthropic API`
+* `Google`, `Google LLM APIs`, and `Google AI APIs` -> `Google AI APIs`
+* `AI Agent patterns`, `AI agent tooling`, and `AI agent libraries` -> `AI Agent Development`
+* `Infrastructure as Code (Terraform)` and `Terraform` -> `Terraform`
+* `Monitoring and logging`, `Monitoring`, and `Logging` -> use `Monitoring` and `Logging` only if both are useful as separate skills; otherwise use `Observability`
+* `Authentication and Authorization`, `Authentication`, and `Authorization` -> `Authentication & Authorization`
+* `REST APIs`, `REST API integration`, and `API testing` -> keep only distinct useful concepts, such as `REST APIs` and `API Testing`
+
+Validation before final output:
+
+* Confirm the JSON key is exactly `categorizedSkills`.
+* Confirm `categorizedSkills` is an array of category objects.
+* Confirm each category object has exactly `category` and `skills`.
+* Confirm every distinct technical concept from input `hard_skills` and `technicalSkills` is represented after normalization.
+* Confirm distinct technologies such as MySQL, SQL Server, Redis, HTML, CSS, GraphQL, WebSocket, Kubernetes, Terraform, pytest, Playwright, Selenium, OpenAI API, Anthropic API, and Google AI APIs are not omitted when present in the inputs.
+* Confirm no duplicate or near-duplicate skills exist.
+* Confirm the output does not include both generic and specific variants of the same concept.
+* Confirm the output does not include generic prose or non-skill phrases.
+* Confirm no skills are placed in clearly wrong categories.
+* Confirm no extra text appears outside the JSON.
+
+Output format:
+{
+  "categorizedSkills": [
+    {
+      "category": "Programming Languages",
+      "skills": ["Python", "TypeScript", "JavaScript", "SQL"]
+    },
+    {
+      "category": "Frameworks & Libraries",
+      "skills": ["FastAPI", "Django", "React", "LangChain"]
+    }
+  ]
+}

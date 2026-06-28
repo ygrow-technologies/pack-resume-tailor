@@ -1,0 +1,54 @@
+Task: Generate typical required technical skills for the given resume headline.
+
+Input:
+
+* Resume Headline: provided by the application.
+
+Rules:
+
+* Output valid JSON only.
+* Use the exact JSON key `technicalSkills`.
+* Do not include markdown, explanation, comments, or text outside the JSON.
+* Generate all strongly related technical skills that are commonly expected for the headline.
+* Include only technical, tool, platform, framework, language, database, cloud, AI, architecture, infrastructure, testing, delivery, or engineering-practice skills.
+* Do not include soft skills.
+* Prioritize skills that would be realistic for the headline's role family and seniority.
+* Expand from explicit headline technologies into closely related ecosystem skills that a qualified developer would normally know.
+* If the headline includes React, include JavaScript, TypeScript, HTML, CSS, frontend state management, responsive UI development, REST API integration, and frontend testing when relevant.
+* If the headline includes Python, include Python 3.x, FastAPI, Django, Flask, pytest, Pydantic, SQLAlchemy, REST APIs, backend services, and API integration when relevant.
+* If the headline includes cloud, AWS, GCP, Azure, Docker, or CI/CD, include Docker, Kubernetes, Terraform, CI/CD pipelines, GitHub Actions, cloud deployment, container orchestration, infrastructure as code, monitoring, logging, and release automation when relevant.
+* If the headline includes PostgreSQL, SQL, or databases, include PostgreSQL, MySQL, SQL Server, Redis, MongoDB, relational database design, schema design, query optimization, indexing, and data modeling when relevant.
+* If the headline includes APIs, include REST APIs, GraphQL, OpenAPI, authentication, authorization, JWT, OAuth2, microservices, integration design, and API testing when relevant.
+* If the headline includes AI, LLM, RAG, agent, or automation signals, include OpenAI API, Anthropic API, Google AI APIs, LangChain, vector databases, embeddings, RAG, prompt engineering, LLM evaluation, and AI agent patterns when relevant.
+* For full stack roles, balance frontend, backend, database, cloud, testing, and delivery skills.
+* For backend roles, emphasize APIs, distributed systems, data modeling, queues, cloud services, reliability, performance, observability, and system design.
+* For AI/ML roles, emphasize LLM APIs, RAG, model integration, evaluation, data pipelines, vector databases, experimentation, and production AI reliability.
+* For data roles, emphasize ETL, ELT, data modeling, warehouses, orchestration, SQL optimization, streaming, data quality, and BI enablement.
+* For DevOps or platform roles, emphasize CI/CD, infrastructure, observability, IaC, containers, release automation, reliability, and incident response.
+* Include broad but relevant coverage; do not stop at only the technologies literally named in the headline.
+* Keep skills concise and ATS-friendly.
+* Avoid duplicates, near-duplicates, and filler terms.
+* Avoid unrelated technologies that do not connect to the headline's role, stack, or seniority.
+
+Validation before final output:
+
+* Confirm the JSON key is exactly `technicalSkills`.
+* Confirm every item is a technical or engineering-practice skill.
+* Confirm no soft skills are included.
+* Confirm related ecosystem skills are included, such as JavaScript and TypeScript for React, adjacent databases for PostgreSQL, and Kubernetes and Terraform for Docker, cloud, or CI/CD.
+* Confirm no extra text appears outside the JSON.
+
+Output format:
+{
+  "technicalSkills": [
+    "Python",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "PostgreSQL",
+    "Docker",
+    "Kubernetes",
+    "Terraform",
+    "REST APIs"
+  ]
+}

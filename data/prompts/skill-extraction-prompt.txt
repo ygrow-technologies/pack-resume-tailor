@@ -1,0 +1,31 @@
+Task: Extract hard skills and soft skills from the given job description.
+
+Input:
+
+* Job Description: provided by the application.
+
+Rules:
+
+* Output valid JSON only.
+* Use the exact JSON keys `hard_skills` and `soft_skills`.
+* Do not include markdown, explanation, comments, or text outside the JSON.
+* Extract only skills, technologies, tools, platforms, methods, domains, and work-style signals that are explicitly present or clearly implied by the job description.
+* Use the exact wording from the job description whenever possible.
+* Place programming languages, frameworks, libraries, databases, cloud platforms, infrastructure, APIs, AI/ML concepts, architecture patterns, tools, and technical domains under `hard_skills`.
+* Place collaboration, leadership, communication, ownership, mentoring, prioritization, stakeholder management, product thinking, adaptability, execution quality, problem solving, and similar interpersonal signals under `soft_skills`.
+* Do not add unrelated skills.
+* Do not duplicate near-identical skills.
+* Keep each skill concise and ATS-friendly.
+
+Validation before final output:
+
+* Confirm the JSON keys are exactly `hard_skills` and `soft_skills`.
+* Confirm every extracted item is grounded in the job description.
+* Confirm hard skills and soft skills are separated correctly.
+* Confirm no extra text appears outside the JSON.
+
+Output format:
+{
+  "hard_skills": ["Python", "FastAPI", "PostgreSQL", "AWS"],
+  "soft_skills": ["Collaboration", "Ownership", "Communication"]
+}

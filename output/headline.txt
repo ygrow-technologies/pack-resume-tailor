@@ -1,0 +1,13 @@
+{
+  "resumeHeadline": "Senior Frontend Engineer | Vue & TypeScript",
+  "cost": {
+    "model": "gpt-5.4-nano",
+    "input_tokens": 1298,
+    "cached_input_tokens": 0,
+    "output_tokens": 22,
+    "input_cost_usd": "0.0002596",
+    "cached_input_cost_usd": "0.00",
+    "output_cost_usd": "0.0000275",
+    "total_cost_usd": "0.0002871"
+  }
+}

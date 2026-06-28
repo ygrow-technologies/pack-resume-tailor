@@ -1,0 +1,115 @@
+Task: Generate ATS-friendly company experience entries for a resume.
+
+Inputs:
+
+* Generated resume headline: provided by the application.
+* Generated or categorized technical skills: provided by the application.
+* Product scope: provided by the application.
+* Job description: provided by the application.
+* Company work periods: provided by the application.
+
+Rules:
+
+* Output valid JSON only.
+* Use the exact top-level JSON key `companyExperiences`.
+* Use camelCase keys exactly as shown in the output format.
+* Do not include markdown, explanation, comments, or text outside the JSON.
+* Identify every company listed in the product scope using each `Company Name:` entry.
+* Generate exactly one experience entry for each listed company.
+* Preserve each company name exactly as written in the product scope.
+* Use each company work period exactly as provided.
+* For each company entry, use exactly these keys:
+  * `companyName`
+  * `workPeriod`
+  * `companyRole`
+  * `experienceBullets`
+* Do not use first-person language.
+* Do not use `I`, `my`, `me`, `we`, or `our`.
+* Generate realistic role titles that show believable career progression.
+* Do not use the generated resume headline as the role title for every company.
+* The earliest company should usually use `Software Engineer`, `Full Stack Developer`, or `Full Stack Engineer` unless the provided timeline clearly supports seniority.
+* Later companies may progress into mid-level or senior roles when the timeline supports it.
+* If the job description strongly emphasizes a specific stack, use a realistic stack-based title when appropriate.
+* If the job description emphasizes full stack, prefer `Senior Full Stack Engineer` for the most recent relevant company.
+* If the job description emphasizes AI, data, DevOps, platform, backend, frontend, mobile, or integration work, choose the closest realistic title for each period.
+* Generate 6 to 8 achievement-oriented resume bullets per company.
+* Each bullet must be one sentence.
+* Each bullet must contain 30 to 40 words.
+* Every word in each bullet must add meaning; avoid filler, random adjectives, vague intensifiers, and repeated buzzwords.
+* Use only that company's products, product scopes, or realistic adjacent internal systems as the business and technical context for that company.
+* Before writing bullets for each company, select 1 or 2 primary product scopes that best match the job description's skills, domain, platform, stack, and responsibilities.
+* Use up to 3 product scopes only when the company period is long, the role is senior or broad, and the job description clearly requires multiple major areas.
+* Do not randomly combine too many products inside one company.
+* Avoid repeating the same product scope, stack story, or technical angle across multiple companies unless the job description strongly requires it.
+* Spread job-description skills naturally across companies.
+* If a perfect product match is not provided, derive a believable adjacent internal product, workflow module, platform, analytics layer, integration service, admin console, customer portal, automation system, or operational dashboard based on the company's business domain.
+* Do not invent extreme, unrelated, legally sensitive, or unsupported claims.
+* Do not add unsupported claims such as founders, healthcare, browser automation, AI agents, regulated environments, payments, HIPAA, or compliance unless clearly present in the job description or candidate context.
+* Every bullet should show what was built or improved, where it was used, and why it mattered.
+* Every bullet should combine an action, product or workflow context, technical contribution, relevant technologies, and clear impact.
+* Include 2 to 5 relevant technologies, tools, frameworks, databases, cloud services, or engineering practices in technical bullets.
+* Include version numbers only when they sound natural on a resume and add credibility.
+* Version numbers are usually appropriate for programming languages, runtimes, major frontend frameworks, backend frameworks, or databases when the timeline supports them.
+* Good version examples include `Python 3.x`, `React 18`, `Django 4.x`, `PostgreSQL 14+`, `.NET 6`, and `Node.js 18`.
+* Do not add versions to infrastructure, DevOps, cloud, orchestration, or IaC tools unless the input explicitly provides the version.
+* Write `Kubernetes`, not `Kubernetes 1.x`.
+* Write `Terraform`, not `Terraform 1.x`.
+* Write `Docker`, not `Docker 20.x` or similar.
+* Write cloud providers as `AWS`, `GCP`, and `Azure` without versions.
+* Do not add version numbers when they would be unsupported, distracting, noisy, or unrealistic.
+* Do not overload one bullet with too many tools.
+* Do not write bullets that only list technologies.
+* Do not write vague bullets such as `worked on various projects`, `helped with development`, or `responsible for software`.
+* At least half of the bullets for each company must include numerical metrics.
+* If a company has 6 bullets, at least 3 bullets must include numerical metrics.
+* If a company has 7 bullets, at least 4 bullets must include numerical metrics.
+* If a company has 8 bullets, at least 5 bullets must include numerical metrics.
+* Include measurable impact when reasonable, but keep metrics realistic, believable, and role-appropriate.
+* Metrics may include users, event volume, latency, uptime, throughput, automation rate, time saved, cost reduction, deployment frequency, defect reduction, pipeline reliability, dashboard freshness, support reduction, SLA improvement, processing volume, or release quality.
+* Avoid exaggerated numbers.
+* Use strong but believable verbs such as built, designed, developed, implemented, optimized, migrated, integrated, automated, improved, refactored, supported, scaled, investigated, delivered, collaborated, mentored, and led.
+* Avoid repeating the same action verb too often.
+* The last bullet for each company should focus on soft skills from the job description, such as ownership, collaboration, leadership, mentoring, stakeholder management, product sense, communication, prioritization, execution quality, customer empathy, or remote teamwork.
+* The last bullet should not be heavily technical.
+* Align bullets with the job-description domain:
+  * AI or GenAI: LLM integration, RAG, prompt engineering, evaluation, automation, data pipelines, experimentation, and production AI reliability.
+  * Data engineering: ETL, ELT, data modeling, warehouse pipelines, SQL optimization, streaming, data quality, orchestration, BI enablement, and pipeline reliability.
+  * Fintech, payments, or finance: transaction workflows, reconciliation, auditability, security, compliance, data accuracy, and operational reliability.
+  * Healthcare: secure workflows, compliance, customer or patient data, integrations, reliability, and reporting.
+  * DevOps or platform engineering: CI/CD, cloud infrastructure, observability, IaC, release automation, containers, uptime, and incident response.
+  * SaaS or enterprise platforms: customer-facing reliability, multi-tenant architecture, integrations, permissions, analytics, support reduction, and product scalability.
+  * Frontend or full stack: React, Angular, Vue, TypeScript, APIs, user workflows, performance, responsive UI, product delivery, and end-to-end ownership.
+  * Backend engineering: APIs, distributed systems, queues, data modeling, cloud services, reliability, performance, observability, and secure integrations.
+
+Validation before final output:
+
+* Confirm the top-level key is exactly `companyExperiences`.
+* Confirm every company listed in the product scope has one entry.
+* Confirm every company entry uses exactly `companyName`, `workPeriod`, `companyRole`, and `experienceBullets`.
+* Confirm every work period is preserved exactly.
+* Confirm every company has 4 to 6 bullets.
+* Confirm every bullet is one sentence.
+* Confirm every bullet contains 30 to 40 words.
+* Confirm every word in each bullet is meaningful and not filler.
+* Confirm at least half of each company's bullets include numerical metrics.
+* Confirm version numbers are used sparingly and only where they sound natural.
+* Confirm infrastructure and cloud tools such as Kubernetes, Terraform, Docker, AWS, GCP, and Azure do not include versions unless the input explicitly provided them.
+* Confirm the last bullet of each company focuses on soft skills, ownership, collaboration, mentoring, leadership, stakeholder communication, or execution quality.
+* Confirm unsupported claims are removed unless clearly provided.
+* Confirm product scopes, technical stacks, and business stories are not unnecessarily duplicated across companies.
+* Confirm no extra text appears outside the JSON.
+
+Output format:
+{
+  "companyExperiences": [
+    {
+      "companyName": "Example Company",
+      "workPeriod": "Jan 2020 - Dec 2022",
+      "companyRole": "Senior Backend Engineer",
+      "experienceBullets": [
+        "Built backend API services for a customer analytics platform using Python 3.x, FastAPI, PostgreSQL 14+, and AWS, improving workflow reliability for 12 product teams handling high-volume account reporting.",
+        "Mentored engineers through design reviews, debugging sessions, and delivery planning, strengthening team ownership, stakeholder communication, and release discipline across customer-facing analytics initiatives."
+      ]
+    }
+  ]
+}

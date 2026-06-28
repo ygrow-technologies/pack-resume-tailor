@@ -1,0 +1,53 @@
+{
+  "companyExperiences": [
+    {
+      "companyName": "Appian",
+      "workPeriod": "Nov 2023 - Apr 2026",
+      "companyRole": "Senior Frontend Engineer",
+      "experienceBullets": [
+        "Built mobile-first, responsive UI modules for Process HQ process intelligence dashboards using Vue.js, TypeScript, Vue Router, and Webpack, enabling operators to navigate bottleneck insights across workflows millions of times per day with consistent loading times.",
+        "Implemented Vuex state management and incremental data-loading patterns for Process HQ monitoring views, reducing UI re-render churn and improving perceived responsiveness during high-frequency event updates across multiple enterprise workspaces.",
+        "Developed an admin-focused frontend for AI Document Center document ingestion workflows, integrating FreeMarker templates with REST APIs to render validation states, extracted field previews, and routing outcomes for support and operations teams.",
+        "Created end-to-end UI tests with Playwright for document classification, validation, and structured output screens, reducing regression defects by 35% and accelerating release confidence through automated checks on critical user paths.",
+        "Optimized performance for large, form-heavy pages in AI Document Center by applying code-splitting, chunked asset loading, and targeted SCSS refactors, improving interactive readiness by 22% on mid-tier devices.",
+        "Led frontend architecture reviews with peers and managers, translating user stories into reusable component patterns and enforcing resource library standards through structured code reviews and clear communication during planning and grooming."
+      ]
+    },
+    {
+      "companyName": "Procore",
+      "workPeriod": "Apr 2020 - Sep 2023",
+      "companyRole": "Frontend Engineer",
+      "experienceBullets": [
+        "Developed responsive interfaces for the Construction Project Management platform covering scheduling, RFIs, submittals, and drawings using Vue.js, TypeScript, and Element UI, improving field usability for teams collaborating across devices on active projects.",
+        "Implemented integration screens for Construction Project Management backend management workflows, using FreeMarker rendering hooks and API contracts to keep document status synchronized and reduce support escalations caused by mismatched UI state by 28%.",
+        "Created component-based UI for Financial Management budget and forecast views with Vue Router navigation and stateful caching, reducing page transition time by 30% during frequent budget revisions across portfolio projects.",
+        "Refactored Webpack build configuration and style pipeline using Less and SCSS to standardize bundle outputs and speed up developer iteration, cutting average local build time by 25% without changing visual specifications.",
+        "Authored Playwright tests for key transactional flows such as change order review and invoice line inspection, improving test coverage for complex UI grids and reducing high-severity regressions by 20% during quarterly releases.",
+        "Mentored junior engineers through pairing sessions, review feedback, and delivery planning, strengthening collaboration across product demonstrations and sprint retrospectives while maintaining ownership of UI quality and stakeholder expectations."
+      ]
+    },
+    {
+      "companyName": "Braze",
+      "workPeriod": "Nov 2017 - Feb 2020",
+      "companyRole": "Full Stack Engineer",
+      "experienceBullets": [
+        "Delivered mobile-first customer journey experiences in Canvas using Vue.js, Vue Router, and Vuex, enabling marketers to design cross-channel campaigns with faster iteration and fewer configuration mistakes for audiences reaching 1M+ users weekly.",
+        "Built and maintained admin screens for campaign configuration and event triggering, integrating REST APIs and authentication flows to ensure reliable personalization rules across bursty customer behavior event streams.",
+        "Developed reusable UI components and templated rendering for message content previews, leveraging FreeMarker where needed to mirror backend formatting and improving preview accuracy by 24% compared with prior builds.",
+        "Implemented performance improvements for orchestration-heavy pages by optimizing state updates and reducing DOM work, improving average interaction latency by 19% during rapid editing sessions and complex journey graphs.",
+        "Created automated UI checks with Playwright for campaign setup and validation states, reducing manual QA effort by 15% and shortening feedback cycles during release trains.",
+        "Collaborated closely with product, design, and engineering to align increments with user story intent, communicate tradeoffs clearly, and mentor peers through constructive reviews and execution-focused planning."
+      ]
+    }
+  ],
+  "cost": {
+    "model": "gpt-5.4-nano",
+    "input_tokens": 4167,
+    "cached_input_tokens": 0,
+    "output_tokens": 794,
+    "input_cost_usd": "0.0008334",
+    "cached_input_cost_usd": "0.00",
+    "output_cost_usd": "0.0009925",
+    "total_cost_usd": "0.0018259"
+  }
+}

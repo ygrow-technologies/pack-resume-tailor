@@ -1,0 +1,17 @@
+Company Name: Appian
+Product Name: Process HQ
+Explanation: Process HQ is an AI-powered process intelligence platform that combines process mining, business data, and automation insights to help organizations discover workflow bottlenecks, monitor operational performance, and optimize end-to-end business processes.
+Product Name: AI Document Center
+Explanation: AI Document Center is an intelligent document processing solution that extracts, classifies, validates, and structures information from business documents using AI, enabling organizations to automate document-centric workflows and reduce manual processing.
+
+Company Name: Procore
+Product Name: Construction Project Management Platform
+Explanation: Construction Project Management is a cloud-based platform that centralizes project planning, document management, scheduling, RFIs, submittals, drawings, and field collaboration, enabling construction teams to manage projects from preconstruction through completion.
+Product Name: Financial Management
+Explanation: Financial Management is a construction financial operations platform that helps organizations manage budgets, forecasts, contracts, commitments, change orders, invoices, and project costs while providing real-time visibility into financial performance.
+
+Company Name: Braze
+Product Name: Canvas
+Explanation: Canvas is a customer journey orchestration platform that enables businesses to design automated, cross-channel customer experiences using real-time customer behavior, events, and personalization.
+Product Name: Braze Predictive Suite
+Explanation: Braze Predictive Suite is an AI-driven analytics solution that predicts customer behavior, churn risk, purchase likelihood, and engagement patterns to help marketers deliver more targeted and effective campaigns.
